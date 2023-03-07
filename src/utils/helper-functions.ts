@@ -22,7 +22,7 @@ export const datePickerStrToDate = (dateStr: string): Date => {
 }
 
 export const thousandSeparator = (number: number): string => {
-  return number.toLocaleString().replace(/\,/g, " ")
+  return number.toLocaleString().replace(/,/g, " ")
 }
 
 export const wordDeclensions = (number: number, words: string[]) => {

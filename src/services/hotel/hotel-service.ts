@@ -7,7 +7,7 @@ import { FetchHotelsData } from './types/fetch-hotels-data'
 import { SortingOrder, SortingOrderType } from '../../shared/enums/sorting-order'
 import { HotelSortingFieldsType, HotelSortingFields } from './enums/hotel-filters'
 
-const HOTELS_API_BASE_URL = 'http://engine.hotellook.com/api/v2/cache.json?currency=rub&limit=10'
+const HOTELS_API_BASE_URL = 'https://engine.hotellook.com/api/v2/cache.json?currency=rub&limit=10'
 
 export const getHotels = async (fetchHotelsData: FetchHotelsData): Promise<Hotel[]> => {
   const { location, checkInDate, checkOutDate } = fetchHotelsData
